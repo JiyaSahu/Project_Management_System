@@ -1,0 +1,1432 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Alphtach | Home</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .navbar {
+            background-color: black;
+        }
+
+            .navbar .brand-navbar img:hover {
+                opacity: 0.7;
+            }
+
+            .navbar ul {
+                padding: 0px 30px 0px 0px;
+            }
+
+                .navbar ul li a {
+                    color: white;
+                    margin: 10px 0px 0px 10px;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                }
+
+                    .navbar ul li a .fas {
+                        padding-right: 5px;
+                        padding-left: 5px;
+                    }
+
+                    .navbar ul li a:hover {
+                        color: #15b000;
+                    }
+
+                .navbar ul li.active > a {
+                    color: #15b000;
+                    font-weight: bold;
+                    font-size: 12px;
+                    border-left: 3px solid #15b000;
+                    border-radius: 40px;
+                }
+
+        .iconStyle {
+            color: #15b000;
+        }
+
+        /*=====================================Slier============================================*/
+
+        header .item {
+            height: 100vh;
+            position: relative;
+        }
+
+            header .item img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            header .item .cover {
+                padding: 75px 0;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background: rgba(0, 0, 0, 0.6);
+                display: flex;
+                align-items: center;
+            }
+
+                header .item .cover .header-content {
+                    position: relative;
+                    padding: 56px;
+                    overflow: hidden;
+                }
+
+                    header .item .cover .header-content .line {
+                        content: "";
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                        left: 0;
+                        top: 0;
+                        position: absolute;
+                        border: 9px solid #fff;
+                        -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+                        clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+                    }
+
+                    header .item .cover .header-content h2 {
+                        font-weight: 300;
+                        font-size: 35px;
+                        color: #fff;
+                    }
+
+                    header .item .cover .header-content h1 {
+                        font-size: 56px;
+                        font-weight: 600;
+                        margin: 5px 0 20px;
+                        word-spacing: 3px;
+                        color: #fff;
+                    }
+
+                    header .item .cover .header-content h4 {
+                        font-size: 24px;
+                        font-weight: 300;
+                        line-height: 36px;
+                        color: #fff;
+                    }
+
+        header .owl-item.active h1 {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-name: fadeInDown;
+            animation-delay: 0.3s;
+        }
+
+        header .owl-item.active h2 {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-name: fadeInDown;
+            animation-delay: 0.3s;
+        }
+
+        header .owl-item.active h4 {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-name: fadeInUp;
+            animation-delay: 0.3s;
+        }
+
+        header .owl-item.active .line {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-name: fadeInLeft;
+            animation-delay: 0.3s;
+        }
+
+        header .owl-nav .owl-prev {
+            position: absolute;
+            left: 15px;
+            top: 43%;
+            opacity: 0;
+            -webkit-transition: all 0.4s ease-out;
+            transition: all 0.4s ease-out;
+            background: rgba(0, 0, 0, 0.5) !important;
+            width: 40px;
+            cursor: pointer;
+            height: 40px;
+            position: absolute;
+            display: block;
+            z-index: 1000;
+            border-radius: 0;
+        }
+
+            header .owl-nav .owl-prev span {
+                font-size: 1.6875rem;
+                color: #fff;
+            }
+
+            header .owl-nav .owl-prev:focus {
+                outline: 0;
+            }
+
+            header .owl-nav .owl-prev:hover {
+                background: #000 !important;
+            }
+
+        header .owl-nav .owl-next {
+            position: absolute;
+            right: 15px;
+            top: 43%;
+            opacity: 0;
+            -webkit-transition: all 0.4s ease-out;
+            transition: all 0.4s ease-out;
+            background: rgba(0, 0, 0, 0.5) !important;
+            width: 40px;
+            cursor: pointer;
+            height: 40px;
+            position: absolute;
+            display: block;
+            z-index: 1000;
+            border-radius: 0;
+        }
+
+            header .owl-nav .owl-next span {
+                font-size: 1.6875rem;
+                color: #fff;
+            }
+
+            header .owl-nav .owl-next:focus {
+                outline: 0;
+            }
+
+            header .owl-nav .owl-next:hover {
+                background: #000 !important;
+            }
+
+        header:hover .owl-prev {
+            left: 0px;
+            opacity: 1;
+        }
+
+        header:hover .owl-next {
+            right: 0px;
+            opacity: 1;
+        }
+
+        /* ************ ABOUT SECTION ********************  */
+        #about {
+            background-color: #e6dddd6c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+            #about .container {
+                background-color: #fff;
+                /* White background for contrast */
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                text-align: center;
+                width: 100%;
+                /* Full width */
+                max-width: 1200px;
+                /* Optional: max width for larger screens */
+                margin: 0 auto;
+                /* Center align */
+            }
+
+                #about .container h1 {
+                    font-size: 2.5em;
+                    /* Larger font size */
+                    margin-bottom: 20px;
+                }
+
+                #about .container p {
+                    font-size: 1.1em;
+                    /* Standard font size */
+                    line-height: 1.6;
+                    margin-bottom: 30px;
+                }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            /* Full width */
+            max-width: 200px;
+            /* Set max width for the image container */
+            margin: 0 auto;
+            /* Center the image container */
+            border-radius: 50%;
+            /* Make it circular */
+            overflow: hidden;
+            /* Hide overflow */
+        }
+
+        .image {
+            width: 100%;
+            /* Full width of the container */
+            height: auto;
+            /* Maintain aspect ratio */
+            object-fit: cover;
+            /* Cover to maintain aspect ratio */
+            transition: transform 0.3s ease;
+        }
+
+        .image-container:hover .image {
+            transform: scale(1.1);
+            /* Scale effect on hover */
+        }
+
+
+        /* Feature SECTION  */
+
+        #feature {
+            font-family: Arial, sans-serif;
+            background-color: #e0e0e0;
+            margin: 0;
+        }
+
+            #feature .container {
+                text-align: center;
+                padding: 20px;
+            }
+
+        .heading {
+            font-size: 60px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 100px;
+            padding: 0 10px;
+        }
+
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            max-width: 450px;
+        }
+
+        .animated-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: transform 1s ease-out, opacity 1s ease-out;
+        }
+
+        .text-container {
+            flex: 1;
+            padding-left: 20px;
+            max-width: 500px;
+            text-align: left;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: transform 1s ease-out, opacity 1s ease-out;
+        }
+
+        .title {
+            font-size: 40px;
+            font-weight: bold;
+            color: #E0A600;
+        }
+
+        .description {
+            font-size: 18px;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        /* When the element is visible, add a class to trigger animations */
+        .visible .animated-image {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .visible .text-container {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+
+        /* FEATURE 2  */
+
+        #feature2 {
+            background-color: #001f3f;
+            color: #fff;
+            font-family: sans-serif;
+            margin: 100px 0px 10px 0px;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 300px;
+        }
+
+            #feature2 h1 {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+
+        button {
+            background-color: #f00;
+            color: #fff;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+            button:hover {
+                background-color: #c00;
+            }
+
+
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        #feature2 button:focus {
+            outline: none;
+        }
+
+        /* Responsive design - mobile adjustments */
+        @media (max-width: 768px) {
+            .content {
+                background-color: aqua;
+                flex-direction: column;
+                text-align: center;
+                padding: 0 10px;
+            }
+
+            .text-container {
+                padding-left: 0;
+                padding-top: 20px;
+                text-align: center;
+            }
+
+            .title {
+                font-size: 24px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+
+            .container h1 {
+                font-size: 2em;
+                /* Slightly smaller title size */
+            }
+
+            .container p {
+                font-size: 1em;
+                /* Smaller paragraph size */
+            }
+
+            .image-container {
+                max-width: 150px;
+                /* Smaller max width for mobile */
+            }
+
+            #feature2 h1 {
+                font-size: 2rem;
+            }
+
+            #feature2 button {
+                font-size: 1rem;
+            }
+        }
+
+        /* Further adjustments for small devices */
+        @media (max-width: 480px) {
+            .heading {
+                font-size: 24px;
+            }
+
+            .title {
+                font-size: 20px;
+            }
+
+            .description {
+                font-size: 14px;
+            }
+
+            .content {
+                gap: 10px;
+            }
+        }
+
+        /* FOOTER  */
+
+        footer {
+            color: #ccc;
+            margin-top: 200px;
+        }
+
+        .footer-widget p {
+            margin-bottom: 27px;
+        }
+
+        p {
+            font-family: 'Nunito', sans-serif;
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+        .animate-border {
+            position: relative;
+            display: block;
+            width: 115px;
+            height: 3px;
+            background: #007bff;
+        }
+
+            .animate-border:after {
+                position: absolute;
+                content: "";
+                width: 35px;
+                height: 3px;
+                left: 0;
+                bottom: 0;
+                border-left: 10px solid #fff;
+                border-right: 10px solid #fff;
+                -webkit-animation: animborder 2s linear infinite;
+                animation: animborder 2s linear infinite;
+            }
+
+        @-webkit-keyframes animborder {
+            0% {
+                -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+            }
+
+            100% {
+                -webkit-transform: translateX(113px);
+                transform: translateX(113px);
+            }
+        }
+
+        @keyframes animborder {
+            0% {
+                -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+            }
+
+            100% {
+                -webkit-transform: translateX(113px);
+                transform: translateX(113px);
+            }
+        }
+
+        .animate-border.border-white:after {
+            border-color: #fff;
+        }
+
+        .animate-border.border-yellow:after {
+            border-color: #F5B02E;
+        }
+
+        .animate-border.border-orange:after {
+            border-right-color: #007bff;
+            border-left-color: #007bff;
+        }
+
+        .animate-border.border-ash:after {
+            border-right-color: #EEF0EF;
+            border-left-color: #EEF0EF;
+        }
+
+        .animate-border.border-offwhite:after {
+            border-right-color: #F7F9F8;
+            border-left-color: #F7F9F8;
+        }
+
+        /* Animated heading border */
+        @keyframes primary-short {
+            0% {
+                width: 15%;
+            }
+
+            50% {
+                width: 90%;
+            }
+
+            100% {
+                width: 10%;
+            }
+        }
+
+        @keyframes primary-long {
+            0% {
+                width: 80%;
+            }
+
+            50% {
+                width: 0%;
+            }
+
+            100% {
+                width: 80%;
+            }
+        }
+
+        .dk-footer {
+            padding: 75px 0 0;
+            background-color: #151414;
+            position: relative;
+            z-index: 2;
+        }
+
+            .dk-footer .contact-us {
+                margin-top: 0;
+                margin-bottom: 30px;
+                padding-left: 80px;
+            }
+
+                .dk-footer .contact-us .contact-info {
+                    margin-left: 50px;
+                }
+
+                .dk-footer .contact-us.contact-us-last {
+                    margin-left: -80px;
+                }
+
+            .dk-footer .contact-icon i {
+                font-size: 24px;
+                top: -15px;
+                position: relative;
+                color: #007bff;
+            }
+
+        .dk-footer-box-info {
+            position: absolute;
+            top: -122px;
+            background: #202020;
+            padding: 40px;
+            z-index: 2;
+        }
+
+            .dk-footer-box-info .footer-social-link h3 {
+                color: #fff;
+                font-size: 24px;
+                margin-bottom: 25px;
+            }
+
+            .dk-footer-box-info .footer-social-link ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .dk-footer-box-info .footer-social-link li {
+                display: inline-block;
+            }
+
+            .dk-footer-box-info .footer-social-link a i {
+                display: block;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 40px;
+                background: #000;
+                margin-right: 5px;
+                color: #fff;
+            }
+
+                .dk-footer-box-info .footer-social-link a i.fa-facebook {
+                    background-color: #3B5998;
+                }
+
+                .dk-footer-box-info .footer-social-link a i.fa-twitter {
+                    background-color: #55ACEE;
+                }
+
+                .dk-footer-box-info .footer-social-link a i.fa-google-plus {
+                    background-color: #DD4B39;
+                }
+
+                .dk-footer-box-info .footer-social-link a i.fa-linkedin {
+                    background-color: #0976B4;
+                }
+
+                .dk-footer-box-info .footer-social-link a i.fa-instagram {
+                    background-color: #B7242A;
+                }
+
+        .footer-awarad {
+            margin-top: 285px;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 0 100%;
+            -moz-box-flex: 0;
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+            .footer-awarad p {
+                color: #fff;
+                font-size: 24px;
+                font-weight: 700;
+                margin-left: 20px;
+                padding-top: 15px;
+            }
+
+        .footer-info-text {
+            margin: 26px 0 32px;
+        }
+
+        .footer-left-widget {
+            padding-left: 80px;
+        }
+
+        .footer-widget .section-heading {
+            margin-bottom: 35px;
+        }
+
+        .footer-widget h3 {
+            font-size: 24px;
+            color: #fff;
+            position: relative;
+            margin-bottom: 15px;
+            max-width: -webkit-fit-content;
+            max-width: -moz-fit-content;
+            max-width: fit-content;
+        }
+
+        .footer-widget ul {
+            width: 50%;
+            float: left;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer-widget li {
+            margin-bottom: 18px;
+        }
+
+        .footer-widget p {
+            margin-bottom: 27px;
+        }
+
+        .footer-widget a {
+            color: #878787;
+            -webkit-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+            .footer-widget a:hover {
+                color: #007bff;
+            }
+
+        .footer-widget:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .dk-footer-form {
+            position: relative;
+        }
+
+            .dk-footer-form input[type=email] {
+                padding: 14px 28px;
+                border-radius: 50px;
+                background: #2E2E2E;
+                border: 1px solid #2E2E2E;
+            }
+
+            .dk-footer-form input::-webkit-input-placeholder,
+            .dk-footer-form input::-moz-placeholder,
+            .dk-footer-form input:-ms-input-placeholder,
+            .dk-footer-form input::-ms-input-placeholder,
+            .dk-footer-form input::-webkit-input-placeholder {
+                color: #878787;
+                font-size: 14px;
+            }
+
+            .dk-footer-form input::-webkit-input-placeholder,
+            .dk-footer-form input::-moz-placeholder,
+            .dk-footer-form input:-ms-input-placeholder,
+            .dk-footer-form input::-ms-input-placeholder,
+            .dk-footer-form input::placeholder {
+                color: #878787;
+                font-size: 14px;
+            }
+
+            .dk-footer-form button[type=submit] {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 12px 24px 12px 17px;
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+                border: 1px solid #007bff;
+                background: #007bff;
+                color: #fff;
+            }
+
+            .dk-footer-form button:hover {
+                cursor: pointer;
+            }
+
+        /* ==========================
+
+            Contact
+
+        =============================*/
+        .contact-us {
+            position: relative;
+            z-index: 2;
+            margin-top: 65px;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .contact-icon {
+            position: absolute;
+        }
+
+            .contact-icon i {
+                font-size: 36px;
+                top: -5px;
+                position: relative;
+                color: #007bff;
+            }
+
+        .contact-info {
+            margin-left: 75px;
+            color: #fff;
+        }
+
+            .contact-info h3 {
+                font-size: 20px;
+                color: #fff;
+                margin-bottom: 0;
+            }
+
+        .copyright {
+            padding: 28px 0;
+            margin-top: 55px;
+            background-color: #202020;
+        }
+
+            .copyright span,
+            .copyright a {
+                color: #878787;
+                -webkit-transition: all 0.3s linear;
+                -o-transition: all 0.3s linear;
+                transition: all 0.3s linear;
+            }
+
+                .copyright a:hover {
+                    color: #007bff;
+                }
+
+        .copyright-menu ul {
+            text-align: right;
+            margin: 0;
+        }
+
+        .copyright-menu li {
+            display: inline-block;
+            padding-left: 20px;
+        }
+
+        .back-to-top {
+            position: relative;
+            z-index: 2;
+        }
+
+            .back-to-top .btn-dark {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                padding: 0;
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: #2e2e2e;
+                border-color: #2e2e2e;
+                display: none;
+                z-index: 999;
+                -webkit-transition: all 0.3s linear;
+                -o-transition: all 0.3s linear;
+                transition: all 0.3s linear;
+            }
+
+                .back-to-top .btn-dark:hover {
+                    cursor: pointer;
+                    background: #FA6742;
+                    border-color: #FA6742;
+                }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- ======================================Navigation Bar================================================= -->
+        <nav class="navbar navbar-expand-lg navStyle">
+            <a class="brand-navbar" href="#"><img src="images/LogoProject.png" alt="Responsive image" height="60px"></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#mainMenu">
+                <span><i class="fas fa-align-right iconStyle"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul class="navbar-nav ml-auto navList">
+                    <li class="nav-item active">
+                        <a href=".owl-carousel" class="nav-link">
+                            <i class="fas fa-home"></i>HOME<span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#feature" class="nav-link"><i class="fas fa-cogs"></i>Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portfolio.html" class="nav-link"><i class="fas fa-briefcase"></i>Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#dk-footer" class="nav-link"><i class="fas fa-phone"></i>Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link"><i class="fas fa-users"></i>About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sigin.aspx" class="nav-link">
+                            </i>SIGN IN
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Registration.aspx" class="nav-link"></i>Registation</a>
+
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- ********************** slider ******************** -->
+        <div id="home">
+
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="images/main1.jpeg" alt="images not found">
+                    <div class="cover">
+                        <div class="container">
+                            <div class="header-content">
+                                <div class="line"></div>
+                                <h2> Simplify Your Project Workflow</h2>
+                                <h1>Get Started for Free!</h1>
+                                <h4>
+                                    A one-stop solution for students and industries to manage, track, and collaborate on
+                                    projects efficiently.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/main2.jpeg" alt="images not found">
+                    <div class="cover">
+                        <div class="container">
+                            <div class="header-content">
+                                <div class="line animated bounceInLeft"></div>
+                                <h2>Take Control of Your Projects, Anytime, Anywhere</h2>
+                                <h1>Start Managing Your Projects Today!</h1>
+                                <h4>
+                                    Manage your projects from start to finish with our easy-to-use platform, whether you're
+                                    in the classroom or on the job.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/main3.jpeg" alt="images not found">
+                    <div class="cover">
+                        <div class="container">
+                            <div class="header-content">
+                                <div class="line animated bounceInLeft"></div>
+                                <h2>Collaborate, Track, and Succeed Together</h2>
+                                <h1>Join Now and Boost Your Productivity!</h1>
+                                <h4>
+                                    Empower your team to work smarter, meet deadlines, and achieve project goals with
+                                    seamless collaboration and management tools.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+    </header>
+
+    </div>
+
+    <!-- ABOUT SECTION  -->
+
+    <section>
+        <div id="about">
+            <div class="container">
+                <h1>What is Project Management System?</h1>
+                <p>
+                    The Project Management System (PMS) is a powerful platform designed to streamline project management
+                    for both students and industry professionals. Whether you're handling academic assignments or
+                    large-scale industrial projects, PMS provides the tools needed to plan, execute, and track your work
+                    seamlessly.
+                </p>
+
+                <div class="image-container">
+                    <img class="image" src="images/aboutMain.jpeg" alt="Project Management System">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURE SECTION  -->
+
+    <section>
+        <div id="feature">
+            <div class="container">
+                <h1 class="heading">Features to Help You Succeed</h1>
+
+                <!-- 1st box  -->
+                <div class="content">
+                    <div class="image-container">
+
+                        <img src="images/task.png" class="animated-image" />
+                    </div>
+                    <div class="text-container">
+                        <h2 class="title">Task Management</h2>
+                        <p class="description">
+                            Manage tasks efficiently by creating, assigning, and tracking them in real time.
+                            Easily add task details, set priorities, and assign team members with automated
+                            notifications.
+                            Monitor progress with live updates, visual progress indicators, and real-time reports.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 2nd box  -->
+                <div class="content">
+                    <div class="text-container">
+                        <h2 class="title">Collaboration Tools</h2>
+                        <p class="description">
+                            Share important files, communicate through integrated messaging, and maintain organized
+                            project discussions. All conversations and resources are kept in one place, making
+                            collaboration smooth and efficient for both remote and in-house teams.
+                        </p>
+                    </div>
+
+                    <div class="image-container">
+                        <img src="images/f2.jpeg" alt="Task Management" class="animated-image">
+                    </div>
+                </div>
+
+                <!-- 3rd Box  -->
+
+                <div class="content">
+                    <div class="image-container">
+
+                        <img src="images/chart.png" class="animated-image" />
+                    </div>
+                    <div class="text-container">
+                        <h2 class="title">Time and Progress Tracking</h2>
+                        <p class="description">
+                            Monitor how time is spent on individual tasks using detailed time logs and visual progress
+                            charts. Stay aware of upcoming deadlines and identify potential bottlenecks to ensure
+                            projects are completed efficiently.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 4th Box  -->
+
+                <div class="content">
+
+                    <div class="text-container">
+                        <h2 class="title">Customizable Workflows</h2>
+                        <p class="description">
+                            Customize the system to fit your unique project needs, whether you use Agile, Waterfall,
+                            Scrum, or your own methodology. Flexibility allows teams to adapt quickly to any changes in
+                            project structure.
+                        </p>
+                    </div>
+
+                    <div class="image-container">
+                        <img src="images/f4.jpeg" alt="Task Management" class="animated-image">
+                    </div>
+                </div>
+
+                <!-- 5th Box  -->
+
+                <div class="content">
+                    <div class="image-container">
+                        <img src="images/f5.jpeg" alt="Task Management" class="animated-image">
+                    </div>
+                    <div class="text-container">
+                        <h2 class="title">Project Analytics</h2>
+                        <p class="description">
+                            Get in-depth insights with real-time analytics that track team productivity, project health,
+                            and task completion. Use data-driven reports to make informed decisions, improve efficiency,
+                            and ensure projects are delivered on time and within scope.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FEATURE 2  -->
+
+    <section>
+        <div id="feature2">
+            <h1>Turn every project into a success story.</h1>
+
+            <button onclick="bounceAnimation()">START YOUR FREE TRIAL</button>
+        </div>
+    </section>
+
+
+    <!-- FOOTER  -->
+
+    <footer id="dk-footer" class="dk-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-4">
+                    <div class="dk-footer-box-info">
+                        <a href="index.html" class="footer-logo">
+                            <img src="images/LogoProject.png" alt="footer_logo" class="img-fluid">
+                        </a>
+                        <p class="footer-info-text">
+                            Helping students and industries manage projects efficiently.
+                        </p>
+                        <div class="footer-social-link">
+                            <h3>Follow us</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Social link -->
+                    </div>
+                    <!-- End Footer info -->
+                    <div class="footer-awarad">
+                        <img src="images/icon/best.png" alt="">
+                        <p>&copy; 2024 Project Management System. All rights reserved.</p>
+                    </div>
+                </div>
+                <!-- End Col -->
+                <div class="col-md-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contact-us">
+                                <div class="contact-icon">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info">
+                                    <h3>Bihar India</h3>
+                                    <p>821307 Dehri On Sone</p>
+                                </div>
+                                <!-- End Contact Info -->
+                            </div>
+                            <!-- End Contact Us -->
+                        </div>
+                        <!-- End Col -->
+                        <div class="col-md-6">
+                            <div class="contact-us contact-us-last">
+                                <div class="contact-icon">
+                                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info">
+                                    <h3>95 711 9 5353</h3>
+                                    <p>Give us a call</p>
+                                </div>
+                                <!-- End Contact Info -->
+                            </div>
+                            <!-- End Contact Us -->
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Contact Row -->
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="footer-widget footer-left-widget">
+                                <div class="section-heading">
+                                    <h3>Useful Links</h3>
+                                    <span class="animate-border border-black"></span>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#about">About us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#feature">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Our Team</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Testimonials</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Faq</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Footer Widget -->
+                        </div>
+                        <!-- End col -->
+                        <div class="col-md-12 col-lg-6">
+                            <div class="footer-widget">
+                                <div class="section-heading">
+                                    <h3>Subscribe</h3>
+                                    <span class="animate-border border-black"></span>
+                                </div>
+                                <p>
+                                    <!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
+                                    Reference site about Lorem Ipsum, giving information on its origins, as well.
+                                </p>
+                                <form action="#">
+                                    <div class="form-row">
+                                        <div class="col dk-footer-form">
+                                            <input type="email" class="form-control" placeholder="Email Address">
+                                            <button type="submit">
+                                                <i class="fa fa-send"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- End form -->
+                            </div>
+                            <!-- End footer widget -->
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Row -->
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Widget Row -->
+        </div>
+        <!-- End Contact Container -->
+
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <span>Copyright © 2019, All Right Reserved Project Management System</span>
+                    </div>
+                    <!-- End Col -->
+                    <div class="col-md-6">
+                        <div class="copyright-menu">
+                            <ul>
+                                <li>
+                                    <a href="#home">Home</a>
+                                </li>
+                                <li>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End col -->
+                </div>
+                <!-- End Row -->
+            </div>
+            <!-- End Copyright Container -->
+        </div>
+        <!-- End Copyright -->
+        <!-- Back to top -->
+        <div id="back-to-top" class="back-to-top">
+            <button class="btn btn-dark" title="Back to Top" style="display: block;">
+                <i class="fa fa-angle-up"></i>
+            </button>
+        </div>
+        <!-- End Back to top -->
+    </footer>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            dots: false,
+            nav: true,
+            mouseDrag: false,
+            autoplay: true,
+            animateOut: 'slideOutUp',
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+
+        // Add event listener to image container
+        document.querySelectorAll('.image-container').forEach((container) => {
+            container.addEventListener('mouseover', () => {
+                // Add zoom in animation
+                container.classList.add('zoom-in');
+            });
+
+            container.addEventListener('mouseout', () => {
+                // Remove zoom in animation
+                container.classList.remove('zoom-in');
+            });
+        });
+
+
+        // FEATURE SECTION
+
+        // JavaScript to observe when elements come into view
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        });
+
+        // Observe each .content section
+        document.querySelectorAll('.content').forEach(content => {
+            observer.observe(content);
+        });
+
+        // FEATURE 2
+
+        function bounceAnimation() {
+            const button = document.querySelector('button');
+            button.style.animation = 'bounce 0.5s ease-in-out';
+        }
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

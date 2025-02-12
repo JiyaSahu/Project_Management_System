@@ -1,0 +1,206 @@
+﻿
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+}
+
+.logo {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+    .logo img {
+        max-width: 100%;
+        height: auto;
+    }
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+    .sidebar h2 {
+        margin-bottom: 20px;
+    }
+
+    .sidebar button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #007bff;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+.projects-list {
+    margin-top: 20px;
+}
+
+.project-item {
+    color: black;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar .delete-button {
+    width: 40px;
+    height: 25px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .header h2 {
+        font-size: 24px;
+    }
+
+.details-page {
+    display: none;
+}
+
+.dynamicBox {
+    display: flex;
+}
+
+    .dynamicBox .content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        gap: 5px;
+        margin-top: 20px;
+    }
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+    .circle:hover {
+        transform: scale(1.1);
+    }
+
+.tooltip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+}
+
+.circle:hover .tooltip {
+    display: block;
+}
+
+.user-section {
+    text-align: right;
+}
+
+.user-name {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+.show {
+    display: block;
+}
+
+.add-project-section {
+    margin-top: 20px;
+}
+
+    .add-project-section input {
+        padding: 10px;
+        width: 70%;
+        margin-right: 10px;
+    }
+
+    .add-project-section button {
+        padding: 10px 15px;
+        background-color: #4d54ff;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        margin-top: 20px;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+}

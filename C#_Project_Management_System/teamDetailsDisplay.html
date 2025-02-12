@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        /* Responsive styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #11151c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            color: #fff;
+        }
+
+
+
+        .container {
+            background-color: #212d40;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px #364156;
+            text-align: center;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        .back {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        h1,
+        h2,
+        p {
+            color: #fff;
+        }
+
+        .data-block {
+            margin-top: 15px;
+            padding: 10px;
+            border-bottom: 1px solid #364156;
+        }
+
+            .data-block:last-child {
+                border-bottom: none;
+            }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+        }
+
+        @media print {
+            body {
+                margin: 10px;
+            }
+
+            .container {
+                width: 100%;
+                margin-left: 0;
+                /*background: white; */
+                /* padding: 20px; */
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .printOut,
+            .btn {
+                display: none;
+            }
+
+            #taskChart {
+                background-color: white !important;
+                /* Ensure the background color is white */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Project Team Members Details</h1>
+        <div id="teamDetails"></div>
+        <button onclick="backToDashBoard()" class="back">Back to DashBoard</button>
+        <button onclick="printCard()" class="back btn">Print</button>
+    </div>
+    
+    <script>
+
+        function backToDashBoard() {
+            setTimeout(() => {
+                window.location.href = "afterLogin.aspx#details-page";
+            }, 100); // Add a slight delay
+        }
+        function displayData() {
+            const savedData = JSON.parse(localStorage.getItem('teamData'));
+            if (savedData) {
+                const teamDetails = document.getElementById('teamDetails');
+                teamDetails.innerHTML = `<h2>SDLC Model: ${savedData.model}</h2>`;
+
+                savedData.members.forEach(member => {
+                    const memberDiv = document.createElement('div');
+                    memberDiv.classList.add("data-block");
+
+                    // Display phase name and other fields only if data exists
+                    let content = `<h3>${member.phaseName || 'Phase'}</h3>`;
+
+                    if (member.name) {
+                        content += `<p><strong>Name:</strong> ${member.name}</p>`;
+                    }
+                    if (member.email) {
+                        content += `<p><strong>Email:</strong> ${member.email}</p>`;
+                    }
+                    if (member.start) {
+                        content += `<p><strong>Start Date:</strong> ${member.start}</p>`;
+                    }
+                    if (member.end) {
+                        content += `<p><strong>End Date:</strong> ${member.end}</p>`;
+                    }
+
+                    // Only append if there is content to display
+                    if (content) {
+                        memberDiv.innerHTML = content;
+                        teamDetails.appendChild(memberDiv);
+                    }
+                });
+            } else {
+                document.getElementById('teamDetails').innerText = "No data available. Please fill out the form.";
+            }
+        }
+
+        window.onload = displayData;
+        function printCard() {
+            window.print();
+        }
+    </script>
+</body>
+</html>

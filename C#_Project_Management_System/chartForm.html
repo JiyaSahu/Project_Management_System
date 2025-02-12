@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Project Management System</title>
+    <link href="CSS/chartForm.css" rel="stylesheet" />
+    
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>Select SDLC Model and Assign Phases</h1>
+        <form id="sdlcForm">
+            <label for="model">Choose SDLC Model:</label>
+            <select id="model" name="model">
+                <option value="Waterfall">Waterfall</option>
+                <option value="Agile">Agile</option>
+                <option value="Scrum">Scrum</option>
+            </select>
+
+            <h3>Assign Team Members and Days to Phases</h3>
+            <div id="phases">
+                <!-- Dynamic input fields for phases -->
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="JavaScripts/chartForm.js"></script>
+</body>
+</html>
